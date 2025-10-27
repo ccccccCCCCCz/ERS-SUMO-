@@ -1,0 +1,17 @@
+<configuration>
+    <input>
+        <net-file value="highway.net.xml"/>
+        <route-files value="ERS.rou.xml"/>
+        <additional-files value="ERS.add.xml"/>
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="300"/>
+    </time>
+
+    <output>
+        <battery-output value="battery_output.xml"/>
+        <fcd-output value="fcd_output.xml"/>
+    </output>
+</configuration>

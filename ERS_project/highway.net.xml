@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-10-27 11:24:29 by Eclipse SUMO netedit Version 1.24.0
+<neteditConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\Users\24478\Desktop\highway.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\24478\Desktop\highway.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.avoid-overlap value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="0"/>
+    </processing>
+
+    <junctions>
+        <no-internal-links value="true"/>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.50"/>
+        <rectangular-lane-cut value="0"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="0"/>
+    </pedestrian>
+
+</neteditConfiguration>
+-->
+
+<net version="1.20" junctionCornerDetail="5" limitTurnSpeed="5.50" avoidOverlap="0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="-454959.51,-4408055.80" convBoundary="0.00,0.00,1797.87,2048.54" origBoundary="116.473575,39.821390,116.500928,39.843532" projParameter="+proj=utm +zone=50 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"/>
+
+    <type id="highway.motorway" priority="14" numLanes="2" speed="39.44" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" oneway="1"/>
+
+    <edge id="E1" from="N1" to="N2" priority="14" type="highway.motorway" spreadType="center" shape="1797.87,2.45 1594.46,196.21 1448.71,340.92 1268.60,528.12 1081.66,734.56 906.85,937.90 719.96,1166.50 181.90,1837.07 10.24,2048.54">
+        <lane id="E1_0" index="0" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" speed="39.44" length="2720.14" shape="1800.08,4.77 1596.69,198.50 1450.99,343.17 1270.94,530.30 1084.06,736.68 909.30,939.96 722.45,1168.51 184.39,1839.08 12.72,2050.56"/>
+        <lane id="E1_1" index="1" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" speed="39.44" length="2720.14" shape="1797.87,2.45 1594.46,196.21 1448.71,340.92 1268.60,528.12 1081.66,734.56 906.85,937.90 719.96,1166.50 181.90,1837.07 10.24,2048.54"/>
+        <lane id="E1_2" index="2" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" speed="39.44" length="2720.14" shape="1795.66,0.13 1592.23,193.92 1446.43,338.67 1266.26,525.94 1079.26,732.44 904.40,935.84 717.47,1164.49 179.41,1835.06 7.76,2046.52"/>
+        <param key="ref" value="G2;AH3"/>
+    </edge>
+    <edge id="E2" from="N4" to="N3" priority="14" type="highway.motorway" spreadType="center" shape="0.00,2038.49 239.37,1740.86 254.41,1722.24 532.00,1380.07 710.74,1157.39 898.00,929.87 1073.06,724.33 1260.11,518.41 1440.25,331.80 1586.60,186.55 1781.91,0.00">
+        <lane id="E2_0" index="0" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" speed="39.44" length="2710.53" shape="-2.49,2036.48 236.88,1738.85 251.92,1720.23 529.51,1378.06 708.26,1155.37 895.55,927.82 1070.66,722.22 1257.77,516.22 1437.97,329.55 1584.37,184.26 1779.70,-2.31"/>
+        <lane id="E2_1" index="1" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" speed="39.44" length="2710.53" shape="0.00,2038.49 239.37,1740.86 254.41,1722.24 532.00,1380.07 710.74,1157.39 898.00,929.87 1073.06,724.33 1260.11,518.41 1440.25,331.80 1586.60,186.55 1781.91,0.00"/>
+        <lane id="E2_2" index="2" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" speed="39.44" length="2710.53" shape="2.49,2040.50 241.86,1742.87 256.90,1724.25 534.49,1382.08 713.22,1159.41 900.45,931.92 1075.46,726.44 1262.45,520.60 1442.53,334.05 1588.83,188.84 1784.12,2.31"/>
+        <param key="ref" value="G2;AH3"/>
+    </edge>
+
+    <junction id="N1" type="dead_end" x="1797.87" y="2.45" incLanes="" intLanes="" shape="1794.56,-1.03 1801.18,5.93"/>
+    <junction id="N2" type="dead_end" x="10.24" y="2048.54" incLanes="E1_0 E1_1 E1_2" intLanes="" shape="13.97,2051.57 6.51,2045.51"/>
+    <junction id="N3" type="dead_end" x="1781.91" y="0.00" incLanes="E2_0 E2_1 E2_2" intLanes="" shape="1778.59,-3.47 1785.23,3.47"/>
+    <junction id="N4" type="dead_end" x="0.00" y="2038.49" incLanes="" intLanes="" shape="3.74,2041.50 -3.74,2035.48"/>
+
+</net>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <chargingStation id="ERS_1"
+                     lane="E1_0"
+                     startPos="0"
+                     endPos="2500"
+                     power="400000"   
+                     efficiency="0.95"
+                     chargeInTransit="true"/> 
+                     
+</additional>
